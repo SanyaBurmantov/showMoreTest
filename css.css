@@ -5,6 +5,7 @@
     width: 700px;
     margin: auto;
     background: antiquewhite;
+    position: relative;
 
 }
 
@@ -16,7 +17,38 @@
     font-size: 16px;
     line-height: 22px;
     margin: 50px;
+    /*background: #dcd3d3;*/
+    position: relative;
+
+}
+
+.main p{
+    /*overflow: hidden;*/
+    /*display: -webkit-box;*/
+    /*-webkit-line-clamp: 2;*/
+    /*-webkit-box-orient: vertical;*/
+    /*text-overflow: ellipsis ;*/
+    /*white-space: initial;*/
+
+
+}
+
+.main p:after{
+    position: absolute;
+    content: ' 11';
     background: #dcd3d3;
+    width: 5px;
+}
+
+.main-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+   background-color: #dcd3d3;
+}
+
+.main--open{
+
 }
 
 .main button{
@@ -26,4 +58,39 @@
     line-height: 22px;
     cursor: pointer;
     color: blue;
+}
+
+.loader{
+
+}
+.test2{
+    position: absolute;
+    background: antiquewhite;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    /*transform: translateY(0%);*/
+    transition: 500ms;
+    opacity: 1;
+}
+
+.test1{
+    position: absolute;
+    background: antiquewhite;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    transition: 500ms;
+    opacity: 0;
+}
+
+.tester{
+    overflow: hidden;
+}
+
+.height0{
+    transition: 100ms;
+    height: 0;
 }
